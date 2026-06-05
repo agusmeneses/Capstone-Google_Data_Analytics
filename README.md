@@ -5,7 +5,7 @@
 Durante el primer trimestre de 2022, la provincia de Corrientes atravesó una de las crisis ambientales, económicas y operativas más severas de su historia reciente. En un contexto marcado por una sequía extrema prolongada y la bajante histórica del río Paraná, los incendios forestales y rurales consumieron, hacia mediados de febrero de ese año, un total de 785.238 hectáreas. La magnitud de la catástrofe se evidenció en un ritmo de progresión del fuego que alcanzó las 30.000 hectáreas diarias, desbordando las capacidades logísticas tradicionales y requiriendo un despliegue sin precedentes de brigadistas, aeronaves y recursos nacionales y locales.
 
 <p align="center">
-  <img src="assets/fire.png" alt="Mapa de incendios de la provincia de Corrientes en el periodo 2021 - 2022" width="80%">
+  <img src="assets/fire.PNG" alt="Mapa de incendios de la provincia de Corrientes en el periodo 2021 - 2022" width="50%">
   <br>
   <em><a href="https://www.lapatriadaweb.com.ar/corrientes-el-mapa-de-los-incendios/" target="_blank">Imagen de Corrientes: el mapa de los incendios - La Patriada Web - Mapa de incendios de la provincia de Corrientes en el periodo 2021 - 2022</a></em>
 </p>
@@ -31,7 +31,7 @@ Este proyecto nace como una iniciativa para estructurar, limpiar y cruzar volúm
 * **Clasificación y Filtrado Geospacial:** Se aplicó un Bounding Box para aislar geográficamente los incidentes ocurridos exclusivamente en el norte de Corrientes, garantizando el aislamiento espacial del área de estudio.
 
 <p align="center">
-  <img src="assets/bb.png" alt="Imagen de Bbox - Límites geográficos" width="60%">
+  <img src="assets/bb.PNG" alt="Imagen de Bbox - Límites geográficos" width="60%">
   <br>
   <em>Imagen de Bbox - De aquí surgieron los límites geográficos para especificar la zona de estudio</em>
 </p>
@@ -49,7 +49,7 @@ Este proyecto nace como una iniciativa para estructurar, limpiar y cruzar volúm
   * **Documentación del Código:** El proceso de limpieza (ETL) fue documentado y segmentado en un notebook de Databricks garantizando la trazabilidad de los datos.
 
 <p align="center">
-  <img src="assets/databricks.png" alt="Catálogo de datos en Databricks" width="80%">
+  <img src="assets/databricks.PNG" alt="Catálogo de datos en Databricks" width="80%">
   <br>
   <em>Imagen de Databricks: Leading Data and AI Platform for Enterprises - Donde se muestra el catálogo de datos de origen y el dataset final generado</em>
 </p>
