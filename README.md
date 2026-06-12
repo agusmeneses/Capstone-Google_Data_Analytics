@@ -22,7 +22,7 @@ Este proyecto nace como una iniciativa para estructurar, limpiar y cruzar volúm
 
 * **Identificación de la tarea empresarial:** El objetivo principal radicó en analizar y cuantificar la relación histórica entre las variables meteorológicas (escasez de precipitaciones, temperaturas máximas) y la propagación de incendios forestales en la región norte de la Provincia de Corrientes durante la última década (2016-2026), con especial énfasis en las anomalías del período 2020-2022.
 * **Determinación de los Interesados:** El análisis está diseñado para aportar valor a entidades gubernamentales, organismos de respuesta a emergencias, el sector agrónomo y organizaciones de conservación ambiental que requieran optimizar sus sistemas de alerta temprana.
-* **Selección del Conjunto de Datos:** Se seleccionaron datos satelitales de anomalías térmicas provistos por la NASA (satélites VIIRS y MODIS) y registros meteorológicos históricos del Instituto Nacional de Tecnología Agropecuaria (INTA), específicamente de estaciones como las de "El Sombrerito", "Colonia Benítez", entre otras.
+* **Selección del Conjunto de Datos:** Se seleccionaron datos satelitales de anomalías térmicas provistos por la NASA (satélites VIIRS y MODIS) y registros meteorológicos históricos del Instituto Nacional de Tecnología Agropecuaria (INTA).
 * **Establecimiento de Métricas Clave:** Las métricas seleccionadas para el seguimiento del objetivo fueron: Volumen de Precipitaciones Mensuales (mm), Temperatura Máxima Promedio Mensual (°C), Frecuencia de Focos de Calor (N°) e Intensidad Radiativa del Fuego (FRP).
 
 ### 2. Fase de Preparación (PREPARE)
