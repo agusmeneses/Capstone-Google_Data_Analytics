@@ -52,7 +52,7 @@ Este proyecto nace como una iniciativa para estructurar, limpiar y cruzar volúm
 <p align="center">
   <img src="assets/databricks.PNG" alt="Catálogo de datos en Databricks" width="80%">
   <br>
-  <em>Imagen de la Plataforma CLoud de Databricks, donde se muestra el trabajo de cómputo en ejecución</em>
+  <em>Imagen de la Plataforma Cloud de Databricks, donde se muestra el trabajo de cómputo en ejecución</em>
 </p>
 
 ### 4. Fase de Análisis (ANALYZE)
