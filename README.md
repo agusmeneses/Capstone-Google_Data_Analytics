@@ -5,17 +5,17 @@
 Durante el primer trimestre de 2022, la provincia de Corrientes atravesó una de las crisis ambientales, económicas y operativas más severas de su historia reciente. En un contexto marcado por una sequía extrema prolongada y la bajante histórica del río Paraná, los incendios forestales y rurales consumieron, hacia fines de febrero de ese año, más de 1.000.000 hectáreas. La magnitud de la catástrofe se evidenció en un ritmo de progresión del fuego que alcanzó las 30.000 hectáreas diarias, desbordando las capacidades logísticas tradicionales y requiriendo un despliegue sin precedentes de brigadistas, aeronaves y recursos nacionales y locales.
 
 <p align="center">
-  <img src="assets/fire.PNG" alt="Mapa de incendios de la provincia de Corrientes en el periodo 2021 - 2022" width="50%">
-  <br>
-  <em><a href="https://www.lapatriadaweb.com.ar/corrientes-el-mapa-de-los-incendios/" target="_blank">La Patriada Web | Mapa de incendios de la provincia de Corrientes en el periodo 2021 - 2022</a></em>
-</p>
-
-Este evento expuso la profunda vulnerabilidad de nuestro territorio ante la combinación de factores climáticos adversos y la falta de un seguimiento de los mismos. El impacto amenazó a la matriz productiva y a la biodiversidad, afectando severamente a la Reserva Provincial del Iberá —el segundo humedal más grande del mundo— y a especies autóctonas en peligro de extinción.
-
-<p align="center">
-  <img src="assets/incendios-corrientes.png" alt="Composición de imágenes de los incendios en Corrientes durante 2022: fauna afectada y labor de brigadistas" width="80%">
+  <img src="assets/incendios-corrientes.png" alt="Composición de imágenes de los incendios en Corrientes durante 2022: fauna afectada y labor de brigadistas" width="75%">
   <br>
   <em>Archivo Periodístico | Devastación durante los megaincendios de Corrientes (2022)</em>
+</p>
+
+Este evento expuso la profunda vulnerabilidad de nuestro territorio ante la combinación de factores climáticos adversos y la falta de un seguimiento de los mismos. El impacto amenazó a la matriz productiva y a la biodiversidad, afectando severamente a la Reserva del Iberá —el segundo humedal más grande del mundo— y a especies autóctonas en peligro de extinción.
+
+<p align="center">
+  <img src="assets/fire.PNG" alt="Mapa de incendios de la provincia de Corrientes en el periodo 2021 - 2022" width="45%">
+  <br>
+  <em><a href="https://www.lapatriadaweb.com.ar/corrientes-el-mapa-de-los-incendios/" target="_blank">La Patriada Web | Mapa de incendios de la provincia de Corrientes en el periodo 2021 - 2022</a></em>
 </p>
 
 Este proyecto nace como una iniciativa para estructurar, limpiar y cruzar volúmenes masivos de datos históricos provenientes de satélites de la NASA y sensores terrestres del INTA. El móvil principal de este análisis es demostrar empíricamente las correlaciones entre los factores climáticos y la ignición territorial, concientizando al gobierno de Corrientes que un dataset validado e íntegro que permita identificar patrones históricos puede evitar catástrofes.
@@ -37,12 +37,12 @@ Este proyecto nace como una iniciativa para estructurar, limpiar y cruzar volúm
 * **Clasificación y Filtrado Geospacial:** Se aplicó un Bounding Box para aislar geográficamente los incidentes ocurridos exclusivamente en el norte de Corrientes, garantizando el aislamiento espacial del área de estudio.
 
 <p align="center">
-  <img src="assets/bb.PNG" alt="Imagen de Bbox - Límites geográficos" width="60%">
+  <img src="assets/bb.PNG" alt="Imagen de Bbox - Límites geográficos" width="75%">
   <br>
   <em>Captura de Bbox, de aquí surgieron los límites geográficos para especificar la zona de estudio</em>
 </p>
 
-* **Evaluación de la Credibilidad del Dato:** Se garantizó la calidad bajo el marco ROCCC. Se identificaron y documentaron sesgos físicos en la recolección, tales como la ceguera satelital por cobertura de nubes (Cumulonimbus) y la falla de sensores pluviométricos en tierra en meses específicos. Referencias: 
+* **Evaluación de la Credibilidad del Dato:** Se garantizó la calidad bajo el marco ROCCC. Se identificaron y documentaron sesgos físicos en la recolección, tales como la ceguera satelital por cobertura de nubes (Cumulonimbus) y la falla de sensores pluviométricos en tierra en meses específicos. Orígen de datos:
     * <em><a href="https://firms.modaps.eosdis.nasa.gov/download/" target="_blank">NASA FIRMS: Archive Download</a></em>
     * <em><a href="https://siga.inta.gob.ar/#/data" target="_blank">INTA: Datos (actuales e históricos)</a></em>
 
@@ -56,7 +56,7 @@ Este proyecto nace como una iniciativa para estructurar, limpiar y cruzar volúm
   * **Documentación del Código:** El proceso de limpieza (ETL) fue documentado y segmentado en un notebook de Databricks garantizando la trazabilidad de los datos.
 
 <p align="center">
-  <img src="assets/databricks.PNG" alt="Databricks" width="80%">
+  <img src="assets/databricks.PNG" alt="Databricks" width="75%">
   <br>
   <em>Captura de la Plataforma Cloud de Databricks, donde se muestra el trabajo de cómputo en ejecución</em>
 </p>
@@ -66,26 +66,27 @@ Este proyecto nace como una iniciativa para estructurar, limpiar y cruzar volúm
 * **Agregación y Consolidación de Datos:** Se aplicaron funciones de agregación espacial y temporal reduciendo cientos de miles de registros crudos a una "Tabla Analítica Final" de alta densidad informativa y bajo peso computacional (una fila por mes exacto).
 * **Organización y Formateo:** La tabla resultante fue estructurada bajo convenciones estándar de tipado (Enteros para conteos, Flotantes decimales para precipitaciones y temperatura), preparada para su ingesta en software de Inteligencia de Negocios.
 * **Ejecución de Cálculos y Relleno de Vacíos:** Se realizaron operaciones de suma total para lluvias y FRP, y cálculos de promedios para temperaturas, forzando matemáticamente los campos nulos a 0 para mantener la integridad de los gráficos de series de tiempo.
-* **Identificación Temprana de Tendencias y Hallazgos:** Durante la revisión tabular se realizó un pequeño EDA (Análisis de Datos Exploratorio) en donde se identificaron relaciones complejas que enriquecen el análisis:
+* **Identificación Temprana de Tendencias y Hallazgos:** Durante la revisión tabular se realizó un pequeño EDA (Análisis de Datos Exploratorio) en donde se identificaron relaciones complejas:
   * **Latencia del Suelo:** Se comprobó que meses de sequía severa no generan incendios inmediatos si están precedidos por meses de alta saturación hídrica.
   * **Agotamiento de Biomasa:** Se identificó una reducción significativa de focos de calor post-crisis 2022 a pesar de condiciones climáticas favorables para incendios, validando el impacto de la ausencia de combustible biológico.
 
 ## 5. Presentación de Resultados y Conclusiones (SHARE)
 
-Los datos revelaron la verdadera naturaleza de las crisis ambientales en la provincia de Corrientes. La visualización de estas métricas desmiente creencias populares y expone la urgente necesidad de implementar herramientas de ciencia de datos en la gestión pública para la toma de decisiones.
+Los datos revelaron la verdadera naturaleza de las crisis ambientales en la provincia de Corrientes. La visualización de estas métricas desmiente creencias populares y refuerza la urgente necesidad de implementar herramientas de ciencia de datos y análisis profundo en la gestión pública para la toma de decisiones.
 
-#### La Trampa de la Cantidad vs. la Devastación Real (2020 vs. 2022)
+#### Análisis de precipitaciones, cantidad de focos de calor e intensidad (2020 vs. 2022)
 
-Al observar un simple conteo de focos de calor, el año 2020 (específicamente el mes de agosto, con 1.518 focos) parece ser el pico máximo de la década. Sin embargo, un análisis profundo incorporando la Intensidad Radiativa (FRP) nos dice que la verdadera catástrofe ocurrió en el primer trimestre de 2022.
+Al observar a simple vista un conteo de focos de calor, el año 2020 (específicamente el mes de agosto, con 1.518 focos) parece ser el pico máximo de la década.
 
 <p align="center">
   <img src="assets/lluviafocostotal.PNG" alt="Lluvia total vs Focos de Calor (2016-2026)" width="80%">
   <br>
-  <em>Gráfico general de Lluvia total vs. Focos de Calor (2016-2026): Evidencia la "trampa de la cantidad" con el pico máximo de focos en agosto de 2020, comparado con la sequía extrema de 2022.</em>
+  <em>Gráfico general de Lluvia total vs. Focos de Calor (2016-2026): En el gráfico se evidencia una sequía extrema prolongada desde 2020 hasta 2023 y un pico máximo de focos en agosto de 2020.</em>
 </p>
 
-* **2020 - El inicio de la sequía y el factor humano:** Durante el invierno de 2020, el fenómeno de La Niña recién comenzaba a secar la capa superficial del suelo. La gran cantidad de focos se debió principalmente a la tradicional quema de pastizales intencionada para la ganadería y siembra, una práctica que se salió de control. Las estadísticas señalan que el 95% de los incendios son intencionales. Aunque la intensidad general de energía liberada fue menor en comparación a 2022, el daño ecológico a nivel local fue masivo; por ejemplo, el Parque Provincial San Cayetano perdió el 90% de su superficie y casi el 100% de su fauna debido a estas quemas [1].
-* **2022 - Los Megaincendios:** La crisis de febrero de 2022 (1.185 focos) fue infinitamente más devastadora. Impulsada por la sequía acumulada de dos años ininterrumpidos de La Niña, temperaturas estivales extremas y la negligencia humana (por falta de concientización), el fuego alcanzó una virulencia incontrolable. En este período, la cobertura vegetal afectada alcanzó el 11% de la superficie total de Corrientes. El fuego penetró en el corazón de los Esteros del Iberá, el segundo humedal más importante de Sudamérica. Esto provocó una destrucción masiva de biodiversidad y puso en grave amenaza a especies vulnerables como el aguará guazú, el ciervo de los pantanos y diversas especies de anfibios y aves [2].
+En paralelo a la cantidad de focos, en el gráfico también se observa una sequía extrema que se prolongó de manera ininterrumpida desde mediados de 2020 hasta principios de 2023. Esto se explica porque la región atravesó un excepcional "episodio triple" del fenómeno de La Niña, el cual bloqueó el régimen de lluvias regular durante tres temporadas consecutivas.
+
+A pesar de la mayor cantidad de focos en 2020, un análisis profundo incorporando esta sequía acumulada y la Intensidad Radiativa (FRP) nos dice que la verdadera catástrofe ocurrió en el primer trimestre de 2022.
 
 <p align="center">
   <img src="assets/frp.PNG" alt="Evolución de la Intensidad Radiativa Total (FRP)" width="80%">
@@ -93,11 +94,14 @@ Al observar un simple conteo de focos de calor, el año 2020 (específicamente e
   <em>Intensidad Radiativa Total (FRP): Esta métrica de energía revela la verdadera magnitud destructiva. La crisis de febrero de 2022 liberó una energía sin precedentes (14.807 MW), superando en gravedad ecológica a los eventos de 2020.</em>
 </p>
 
+* **2020 - El inicio de la sequía y el factor humano:** Durante el invierno de 2020, el fenómeno de La Niña recién comenzaba a secar la capa superficial del suelo. La gran cantidad de focos se debió principalmente a la tradicional quema de pastizales intencionada para la ganadería y siembra, una práctica que se salió de control (las estadísticas señalan que el 95% de los incendios son intencionales). Aunque la intensidad general de energía liberada fue menor en comparación a 2022, el daño ecológico a nivel local fue también masivo; por ejemplo, el Parque Provincial San Cayetano perdió el 90% de su superficie y casi el 100% de su fauna debido a estas quemas [1].
+* **2022 - Los Megaincendios y el Colapso Hídrico:** La crisis de febrero de 2022 (1.185 focos) fue infinitamente más devastadora. Los humedales poseen una gran capacidad de retención y tardan un tiempo considerable en agotar o recargar sus reservas de agua. En 2020, las napas profundas aún conservaban humedad previa que amortiguó el impacto del fuego. Sin embargo, tras dos años acumulados de la sequía de La Niña sin recarga hídrica, para 2022 los humedales estaban estructuralmente secos. Esta falta de humedad profunda, combinada con temperaturas estivales extremas y la negligencia humana, provocó que el fuego alcanzara una virulencia incontrolable. En este período, la cobertura vegetal afectada alcanzó el 11% de la superficie total de Corrientes. El fuego penetró en el corazón de los Esteros del Iberá, provocando una destrucción masiva de biodiversidad y poniendo en grave amenaza a especies vulnerables como el aguará guazú y el ciervo de los pantanos [2].
+
 #### El Desplazamiento Estacional: Cuando el ecosistema colapsa
 
 El mapa de calor histórico y el cruce con temperaturas máximas revelan un comportamiento anómalo fundamental que explica la tragedia de 2022 y la importancia de PREVENIR.
 
-Históricamente (2016-2019), la temporada alta de incendios en Corrientes ocurre en agosto y septiembre. En esta época no existen calores abrasadores (los promedios rondan los 24°C a 26°C); el fuego es impulsado por las heladas invernales que secan el pasto y por la alta actividad antrópica. El calor extremo del verano correntino rara vez causaba incendios graves porque los humedales funcionaban como un cortafuegos natural gracias a las lluvias estivales (Efecto Esponja).
+Históricamente (2016-2019), la temporada alta de incendios en Corrientes ocurre en agosto y septiembre (por actividad antrópica principalmente). En esta época no existen calores abrasadores (los promedios rondan los 24°C a 26°C). Por otra parte, el calor extremo del verano en los meses de enero y febrero rara vez causaba incendios graves porque los humedales funcionaban como un cortafuegos natural gracias a las lluvias estivales (Efecto Esponja).
 
 Sin embargo, el gráfico evidencia que en 2022 este patrón se rompió por completo: la alta concentración de fuego se desplazó al pleno verano (enero-febrero). La falta de herramientas de análisis predictivo impidió a las autoridades notar a tiempo impacto producido anteriormente en 2020 y los meses de sequía (los humedales habían perdido su capacidad de retención hídrica), permitiendo que el ecosistema ardiera con facilidad a más de 40°C.
 
@@ -110,7 +114,7 @@ Sin embargo, el gráfico evidencia que en 2022 este patrón se rompió por compl
 <p align="center">
   <img src="assets/tempfocostotal.PNG" alt="Cruce de Temperaturas Máximas vs Focos de Calor" width="80%">
   <br>
-  <em>Temperatura Máxima vs. Focos de Calor: Ilustra cómo en 2022 el colapso del "efecto esponja" del humedal permitió que el fuego se combinara fatalmente con temperaturas extremas que superaban los 35°C, situación que no producía incendios en años húmedos previos.</em>
+  <em>Temperatura Máxima vs. Focos de Calor: Ilustra cómo en 2022 el colapso del "efecto esponja" del humedal permitió que el fuego se combinara fatalmente con temperaturas extremas que superaban los 40°C, situación que no producía incendios en años húmedos previos.</em>
 </p>
 
 #### El Caso de Marzo 2025: Incendios sin Megadevastación
