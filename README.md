@@ -72,7 +72,7 @@ Este proyecto nace como una iniciativa para estructurar, limpiar y cruzar volúm
 
 ## 5. Presentación de Resultados y Conclusiones (SHARE)
 
-Los datos revelaron la verdadera naturaleza de las crisis ambientales en la provincia de Corrientes. La visualización de estas métricas desmiente creencias populares y refuerza la urgente necesidad de implementar herramientas de ciencia de datos y análisis profundo en la gestión pública para la toma de decisiones.
+Los datos revelaron la verdadera naturaleza de las crisis ambientales en la provincia de Corrientes. La visualización de estas métricas desmiente creencias populares y refuerza la urgente necesidad de implementar herramientas de ciencia de datos en la gestión pública para la toma de decisiones.
 
 #### Análisis de precipitaciones, cantidad de focos de calor e intensidad (2020 vs. 2022)
 
@@ -81,21 +81,21 @@ Al observar a simple vista un conteo de focos de calor, el año 2020 (específic
 <p align="center">
   <img src="assets/lluviafocostotal.PNG" alt="Lluvia total vs Focos de Calor (2016-2026)" width="80%">
   <br>
-  <em>Gráfico general de Lluvia total vs. Focos de Calor (2016-2026): En el gráfico se evidencia una sequía extrema prolongada desde 2020 hasta 2023 y un pico máximo de focos en agosto de 2020.</em>
+  <em>Gráfico general de Lluvia total vs. Focos de Calor (2016-2026): En el gráfico se evidencia una gran caída de las precipitaciones desde 2020 hasta 2023 y un pico máximo de focos en agosto de 2020.</em>
 </p>
 
 En paralelo a la cantidad de focos, en el gráfico también se observa una sequía extrema que se prolongó de manera ininterrumpida desde mediados de 2020 hasta principios de 2023. Esto se explica porque la región atravesó un excepcional "episodio triple" del fenómeno de La Niña, el cual bloqueó el régimen de lluvias regular durante tres temporadas consecutivas.
 
-A pesar de la mayor cantidad de focos en 2020, un análisis profundo incorporando esta sequía acumulada y la Intensidad Radiativa (FRP) nos dice que la verdadera catástrofe ocurrió en el primer trimestre de 2022.
+A pesar de la mayor cantidad de focos en 2020, un análisis profundo contemplando esta sequía acumulada y la Intensidad Radiativa (FRP) nos dice que la verdadera catástrofe ocurrió en el primer trimestre de 2022.
 
 <p align="center">
   <img src="assets/frp.PNG" alt="Evolución de la Intensidad Radiativa Total (FRP)" width="80%">
   <br>
-  <em>Intensidad Radiativa Total (FRP): Esta métrica de energía revela la verdadera magnitud destructiva. La crisis de febrero de 2022 liberó una energía sin precedentes (14.807 MW), superando en gravedad ecológica a los eventos de 2020.</em>
+  <em>Intensidad Radiativa Total (FRP): Esta métrica de energía revela que la crisis de febrero de 2022 liberó una energía sin precedentes (14.807 MW), superando en gravedad a los eventos de 2020.</em>
 </p>
 
-* **2020 - El inicio de la sequía y el factor humano:** Durante el invierno de 2020, el fenómeno de La Niña recién comenzaba a secar la capa superficial del suelo. La gran cantidad de focos se debió principalmente a la tradicional quema de pastizales intencionada para la ganadería y siembra, una práctica que se salió de control (las estadísticas señalan que el 95% de los incendios son intencionales). Aunque la intensidad general de energía liberada fue menor en comparación a 2022, el daño ecológico a nivel local fue también masivo; por ejemplo, el Parque Provincial San Cayetano perdió el 90% de su superficie y casi el 100% de su fauna debido a estas quemas [1].
-* **2022 - Los Megaincendios y el Colapso Hídrico:** La crisis de febrero de 2022 (1.185 focos) fue infinitamente más devastadora. Los humedales poseen una gran capacidad de retención y tardan un tiempo considerable en agotar o recargar sus reservas de agua. En 2020, las napas profundas aún conservaban humedad previa que amortiguó el impacto del fuego. Sin embargo, tras dos años acumulados de la sequía de La Niña sin recarga hídrica, para 2022 los humedales estaban estructuralmente secos. Esta falta de humedad profunda, combinada con temperaturas estivales extremas y la negligencia humana, provocó que el fuego alcanzara una virulencia incontrolable. En este período, la cobertura vegetal afectada alcanzó el 11% de la superficie total de Corrientes. El fuego penetró en el corazón de los Esteros del Iberá, provocando una destrucción masiva de biodiversidad y poniendo en grave amenaza a especies vulnerables como el aguará guazú y el ciervo de los pantanos [2].
+* **2020 - El inicio de la sequía y el factor humano:** Durante el invierno de 2020, el fenómeno de La Niña recién comenzaba a secar la capa superficial del suelo. La gran cantidad de focos (1.518) se debió principalmente a la tradicional quema intencional de pastizales para la ganadería y siembra (las estadísticas señalan que el 95% de los incendios son intencionales), una práctica que se salió de control. Aunque la intensidad de energía liberada en 2020 fue menor en comparación a 2022, el daño ecológico a nivel local fue también masivo; por ejemplo, el Parque Provincial San Cayetano perdió el 90% de su superficie y casi el 100% de su fauna debido a estas quemas [1].
+* **2022 - Los megaincendios y el colapso hídrico:** La crisis de febrero de 2022 (1.185 focos) fue infinitamente más devastadora. Los humedales poseen una gran capacidad de retención y tardan un tiempo considerable en agotar o recargar sus reservas de agua. En 2020, las napas profundas aún conservaban humedad previa que amortiguó el impacto del fuego. Sin embargo, tras dos años acumulados de la sequía de La Niña sin recarga hídrica, para 2022 los humedales estaban estructuralmente secos. Esta falta de humedad profunda, combinada con temperaturas estivales extremas y la negligencia humana, provocó que el fuego alcanzara una virulencia incontrolable. En este período, la cobertura vegetal afectada alcanzó el 11% de la superficie total de Corrientes. El fuego penetró en el corazón de los Esteros del Iberá, provocando una destrucción masiva de biodiversidad y poniendo en grave amenaza a especies vulnerables como el aguará guazú y el ciervo de los pantanos [2].
 
 #### El Desplazamiento Estacional: Cuando el ecosistema colapsa
 
@@ -114,16 +114,16 @@ Sin embargo, el gráfico evidencia que en 2022 este patrón se rompió por compl
 <p align="center">
   <img src="assets/tempfocostotal.PNG" alt="Cruce de Temperaturas Máximas vs Focos de Calor" width="80%">
   <br>
-  <em>Temperatura Máxima vs. Focos de Calor: Ilustra cómo en 2022 el colapso del "efecto esponja" del humedal permitió que el fuego se combinara fatalmente con temperaturas extremas que superaban los 40°C, situación que no producía incendios en años húmedos previos.</em>
+  <em>Temperatura Máxima vs. Focos de Calor: Ilustra cómo en 2022 el colapso del "efecto esponja" del humedal permitió que el fuego se combinara fatalmente con temperaturas extremas de 40°C, situación que no producía incendios en años húmedos previos.</em>
 </p>
 
 #### El Caso de Marzo 2025: Incendios sin Megadevastación
 
-El dataset registra un nuevo pico de focos de calor hacia el final del período analizado, específicamente en marzo de 2025 (681 focos). No obstante, al analizar su métrica de FRP, la intensidad fue notablemente inferior a la crisis de 2022.
+El dataset registra un nuevo pico de focos de calor hacia el final del período analizado, específicamente en marzo de 2025 (681 focos). Aunque muy preocupante, al analizar su métrica de FRP la intensidad fue notablemente inferior a la crisis de 2022.
 
 Se puede explicar este fenómeno mediante dos factores clave:
 
-* **El Efecto Esponja Residual:** A diferencia del escenario previo a 2022, el año 2025 estuvo antecedido por el ciclo lluvioso de "El Niño" (2023-2024), el cual logró recargar las napas y humedales profundos. Estas reservas hídricas impidieron que el fuego penetrara en la tierra y causara daños estructurales severos en el ecosistema.
+* **El Efecto Esponja Residual:** A diferencia del escenario previo a 2022, el año 2025 estuvo antecedido por el ciclo lluvioso de "El Niño" (2024), el cual logró en parte recargar las napas y humedales profundos. Estas reservas hídricas impidieron que el fuego penetrara en la tierra y causara daños estructurales severos en el ecosistema.
 * **Agotamiento de Biomasa:** Los megaincendios de 2022 consumieron gran parte del combustible pesado. Por lo tanto, los incendios de 2025 —detonados nuevamente por la imprudencia humana durante una ventana seca— fueron mayormente fuegos superficiales de pasturas de rápida combustión, incapaces de sostener la energía radiativa destructiva observada años atrás.
 
 <p align="center">
@@ -136,7 +136,7 @@ Se puede explicar este fenómeno mediante dos factores clave:
 
 La crisis de incendios en Corrientes no es un evento impredecible de la naturaleza, sino el resultado de una fórmula climática y social claramente evidenciada en este análisis: Sequía Acumulada + Altas Temperaturas + Imprudencia Humana.
 
-El mayor hallazgo de este proyecto es que los megaincendios y las condiciones para su propagación pueden ser pronosticados con meses de anticipación. La falta de herramientas de ciencia de datos y de equipos de análisis continuo en la gestión pública ha provocado que históricamente se reaccione al fuego cuando este ya es incontrolable.
+El mayor hallazgo de este proyecto es que los megaincendios y las condiciones para su propagación pueden ser pronosticados con meses de anticipación. La falta de herramientas de ciencia de datos y de equipos de análisis continuo ha provocado que históricamente se reaccione al fuego cuando este ya es incontrolable.
 
 Para evitar futuros ecocidios y proteger la matriz productiva y natural de la provincia, es imperativo que el gobierno, los Ministerios y Defensa Civil adopten sistemas de Inteligencia de Negocios y modelos predictivos. Monitorear constantemente los datos y la acumulación de sequía a través de tableros de control permitirá tomar decisiones tempranas: prohibir quemas de manera oportuna, penalizar la negligencia de forma focalizada y desplegar recursos preventivos semanas antes de que una chispa se convierta en una tragedia nacional.
 
