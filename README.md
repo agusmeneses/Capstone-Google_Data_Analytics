@@ -72,7 +72,7 @@ Este proyecto nace como una iniciativa para estructurar, limpiar y cruzar volúm
 
 ## 5. Presentación de Resultados y Conclusiones (SHARE)
 
-Los datos revelaron la verdadera naturaleza de las crisis ambientales en la provincia de Corrientes. La visualización de estas métricas desmiente creencias populares y refuerza la urgente necesidad de implementar herramientas de ciencia de datos en la gestión pública para la toma de decisiones.
+Los resultados revelaron la verdadera naturaleza de las crisis ambientales en la provincia de Corrientes. La visualización de estas métricas refuerza la importancia de los datos y la urgente necesidad de implementar herramientas de análisis profundo de los mismos en la gestión pública para la toma de decisiones.
 
 #### Análisis de precipitaciones, cantidad de focos de calor e intensidad (2020 vs. 2022)
 
