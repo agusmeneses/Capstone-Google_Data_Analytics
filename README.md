@@ -2,15 +2,21 @@
 
 ## Introducción y Móvil del Análisis
 
-Durante el primer trimestre de 2022, la provincia de Corrientes atravesó una de las crisis ambientales, económicas y operativas más severas de su historia reciente. En un contexto marcado por una sequía extrema prolongada y la bajante histórica del río Paraná, los incendios forestales y rurales consumieron, hacia mediados de febrero de ese año, un total de 785.238 hectáreas. La magnitud de la catástrofe se evidenció en un ritmo de progresión del fuego que alcanzó las 30.000 hectáreas diarias, desbordando las capacidades logísticas tradicionales y requiriendo un despliegue sin precedentes de brigadistas, aeronaves y recursos nacionales y locales.
+Durante el primer trimestre de 2022, la provincia de Corrientes atravesó una de las crisis ambientales, económicas y operativas más severas de su historia reciente. En un contexto marcado por una sequía extrema prolongada y la bajante histórica del río Paraná, los incendios forestales y rurales consumieron, hacia fines de febrero de ese año, más de 1.000.000 hectáreas. La magnitud de la catástrofe se evidenció en un ritmo de progresión del fuego que alcanzó las 30.000 hectáreas diarias, desbordando las capacidades logísticas tradicionales y requiriendo un despliegue sin precedentes de brigadistas, aeronaves y recursos nacionales y locales.
 
 <p align="center">
   <img src="assets/fire.PNG" alt="Mapa de incendios de la provincia de Corrientes en el periodo 2021 - 2022" width="50%">
   <br>
-  <em><a href="https://www.lapatriadaweb.com.ar/corrientes-el-mapa-de-los-incendios/" target="_blank">Imagen de Corrientes: el mapa de los incendios - La Patriada Web - Mapa de incendios de la provincia de Corrientes en el periodo 2021 - 2022</a></em>
+  <em><a href="https://www.lapatriadaweb.com.ar/corrientes-el-mapa-de-los-incendios/" target="_blank">La Patriada Web | Mapa de incendios de la provincia de Corrientes en el periodo 2021 - 2022</a></em>
 </p>
 
 Este evento expuso la profunda vulnerabilidad de nuestro territorio ante la combinación de factores climáticos adversos y la falta de un seguimiento de los mismos. El impacto amenazó a la matriz productiva y a la biodiversidad, afectando severamente a la Reserva Provincial del Iberá —el segundo humedal más grande del mundo— y a especies autóctonas en peligro de extinción.
+
+<p align="center">
+  <img src="assets/incendios-corrientes.png" alt="Composición de imágenes de los incendios en Corrientes durante 2022: fauna afectada y labor de brigadistas" width="80%">
+  <br>
+  <em>Archivo Periodístico | Devastación durante los megaincendios de Corrientes (2022)</em>
+</p>
 
 Este proyecto nace como una iniciativa para estructurar, limpiar y cruzar volúmenes masivos de datos históricos provenientes de satélites de la NASA y sensores terrestres del INTA. El móvil principal de este análisis es demostrar empíricamente las correlaciones entre los factores climáticos y la ignición territorial, concientizando al gobierno de Corrientes que un dataset validado e íntegro que permita identificar patrones históricos puede evitar catástrofes.
 
@@ -33,11 +39,11 @@ Este proyecto nace como una iniciativa para estructurar, limpiar y cruzar volúm
 <p align="center">
   <img src="assets/bb.PNG" alt="Imagen de Bbox - Límites geográficos" width="60%">
   <br>
-  <em>Imagen de Bbox - De aquí surgieron los límites geográficos para especificar la zona de estudio</em>
+  <em>Captura de Bbox, de aquí surgieron los límites geográficos para especificar la zona de estudio</em>
 </p>
 
 * **Evaluación de la Credibilidad del Dato:** Se garantizó la calidad bajo el marco ROCCC. Se identificaron y documentaron sesgos físicos en la recolección, tales como la ceguera satelital por cobertura de nubes (Cumulonimbus) y la falla de sensores pluviométricos en tierra en meses específicos. Referencias: 
-    * <em><a href="https://firms.modaps.eosdis.nasa.gov/download/" target="_blank">NASA - FIRMS: Archive Download</a></em>
+    * <em><a href="https://firms.modaps.eosdis.nasa.gov/download/" target="_blank">NASA FIRMS: Archive Download</a></em>
     * <em><a href="https://siga.inta.gob.ar/#/data" target="_blank">INTA: Datos (actuales e históricos)</a></em>
 
 ### 3. Fase de Procesamiento (PROCESS)
@@ -50,9 +56,9 @@ Este proyecto nace como una iniciativa para estructurar, limpiar y cruzar volúm
   * **Documentación del Código:** El proceso de limpieza (ETL) fue documentado y segmentado en un notebook de Databricks garantizando la trazabilidad de los datos.
 
 <p align="center">
-  <img src="assets/databricks.PNG" alt="Catálogo de datos en Databricks" width="80%">
+  <img src="assets/databricks.PNG" alt="Databricks" width="80%">
   <br>
-  <em>Imagen de la Plataforma Cloud de Databricks, donde se muestra el trabajo de cómputo en ejecución</em>
+  <em>Captura de la Plataforma Cloud de Databricks, donde se muestra el trabajo de cómputo en ejecución</em>
 </p>
 
 ### 4. Fase de Análisis (ANALYZE)
@@ -79,7 +85,7 @@ Al observar un simple conteo de focos de calor, el año 2020 (específicamente e
 </p>
 
 * **2020 - El inicio de la sequía y el factor humano:** Durante el invierno de 2020, el fenómeno de La Niña recién comenzaba a secar la capa superficial del suelo. La gran cantidad de focos se debió principalmente a la tradicional quema de pastizales intencionada para la ganadería y siembra, una práctica que se salió de control. Las estadísticas señalan que el 95% de los incendios son intencionales. Aunque la intensidad general de energía liberada fue menor en comparación a 2022, el daño ecológico a nivel local fue masivo; por ejemplo, el Parque Provincial San Cayetano perdió el 90% de su superficie y casi el 100% de su fauna debido a estas quemas [1].
-* **2022 - Los Megaincendios:** La crisis de febrero de 2022 (1.185 focos) fue infinitamente más devastadora. Impulsada por la sequía acumulada de dos años ininterrumpidos de La Niña, temperaturas estivales extremas y la negligencia humana (por falta de concientización), el fuego alcanzó una virulencia incontrolable. En este período, la cobertura vegetal afectada alcanzó las 934.238 hectáreas. Esto equivale al 11 por ciento de la superficie total de Corrientes. El fuego penetró en el corazón de los Esteros del Iberá, el segundo humedal más importante de Sudamérica. Esto provocó una destrucción masiva de biodiversidad y puso en grave amenaza a especies vulnerables como el aguará guazú, el ciervo de los pantanos y diversas especies de anfibios y aves [2].
+* **2022 - Los Megaincendios:** La crisis de febrero de 2022 (1.185 focos) fue infinitamente más devastadora. Impulsada por la sequía acumulada de dos años ininterrumpidos de La Niña, temperaturas estivales extremas y la negligencia humana (por falta de concientización), el fuego alcanzó una virulencia incontrolable. En este período, la cobertura vegetal afectada alcanzó el 11% de la superficie total de Corrientes. El fuego penetró en el corazón de los Esteros del Iberá, el segundo humedal más importante de Sudamérica. Esto provocó una destrucción masiva de biodiversidad y puso en grave amenaza a especies vulnerables como el aguará guazú, el ciervo de los pantanos y diversas especies de anfibios y aves [2].
 
 <p align="center">
   <img src="assets/frp.PNG" alt="Evolución de la Intensidad Radiativa Total (FRP)" width="80%">
